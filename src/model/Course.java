@@ -1,10 +1,16 @@
 package model;
 
+/**
+ * Represents a course with its code, title and credit unit.
+ */
 public class Course {
     private final String courseCode;
     private final String courseTitle;
     private final int courseUnit;
 
+    /**
+     * Creates a new course object.
+     */
     public Course(String courseCode, String courseTitle, int courseUnit) {
         this.courseCode = courseCode;
         this.courseTitle = courseTitle;
@@ -23,6 +29,10 @@ public class Course {
         return courseUnit;
     }
 
+    /**
+     * Returns a readable representation of the course.
+     * Useful for debugging and testing.
+     */
     @Override
     public String toString() {
         return "Course{" +

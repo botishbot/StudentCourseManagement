@@ -5,6 +5,10 @@ import service.CourseManager;
 import model.Course;
 import java.util.ArrayList;
 
+/**
+ * Handles all user interaction through
+ * the console-based menu interface.
+ */
 public class ConsoleUi {
 
     private static final String APP_TITLE = "STUDENT COURSE MANAGEMENT SYSTEM";
@@ -63,6 +67,10 @@ public class ConsoleUi {
         }
     }
 
+    /**
+     * Starts the application and
+     * controls the main menu loop.
+     */
     public void start() {
         boolean running = true;
 
@@ -317,6 +325,10 @@ public class ConsoleUi {
         scanner.nextLine();
     }
 
+    /**
+     * Closes the application after checking
+     * whether unsaved changes should be saved.
+     */
     private boolean exitApplicationUI() {
         if (manager.hasUnsavedChanges()) {
 
